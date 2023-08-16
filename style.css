@@ -1,0 +1,306 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header start */
+header {
+    background-image: url('images/banner.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+header::after {
+    position: absolute;
+    content: '';
+    background-color: #2f334dc2;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+header .navigation .navbar {
+    background-color: transparent !important;
+    border-bottom: 1px solid #666;
+}
+header .navigation .navbar .navbar-brand img {
+    max-width: 150px;
+}
+header .banner .content {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+}
+header .banner .content h2 {
+    font-size: 40px;
+}
+header .banner .content button {
+    margin-top: 30px;
+    border: none;
+    background-color: #E84545;
+    font-size: 14px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+header .banner .content button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 6px rgba(255, 98, 98, 0.548);
+}
+/* Header end */
+
+
+
+/* ================================== */
+/* Services start */
+.service-area {
+    padding: 30px 0 10px 0;
+}
+.service-area .item {
+    text-align: center;
+    padding: 30px 8px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+.service-area .item .icon img {
+    width: 52px;
+}
+.service-area .item .body {
+    padding: 8px;
+    margin-top: 12px;
+}
+.service-area .item .body .title {
+    font-size: 18px;
+    color: #444;
+}
+.service-area .item .body .text {
+    color: #777;
+    font-size: 14px;
+}
+.service-area .item:hover {
+    box-shadow: 0 3px 12px rgba(0,0,0,.15);
+}
+/* Services end */
+
+/* Gallery start */
+.gallery-area {
+    padding: 30px 0;
+}
+.gallery-area .images {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+}
+.gallery-area .images .image {
+    overflow: hidden;
+}
+.gallery-area .images .image img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+.gallery-area .images .image img:hover {
+    transform: scale(1.1);
+}
+/* Gallery end */
+
+
+/* Portfolio start */
+.portfolio-area {
+    padding: 30px 0;
+}
+.portfolio-area .card {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-area .card::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #E84545;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+.portfolio-area .card:hover::after {
+    width: 100%;
+}
+.portfolio-area .card .image {
+    overflow: hidden;
+}
+.portfolio-area .card .image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+.portfolio-area .card:hover .image img {
+    transform: scale(1.1);
+}
+.portfolio-area .card .card-body .desination {
+    color: #E84545;
+    font-size: 14px;
+}
+.portfolio-area .card .card-body .social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    column-gap: 8px;
+}
+.portfolio-area .card .card-body .social li a {
+    border: 1px solid #ddd;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Portfolio end */
+
+/* Testimonial start */
+.testimonial-area {
+    padding: 30px 0;
+    overflow: hidden;
+}
+.testimonial-area .row {
+    display: flex;
+    align-items: center;
+    background-color: #53354A;
+    color: #fff;
+}
+.testimonial-area .image img {
+    width: 100%;
+}
+.testimonial-area .carousel-item {
+    height: 250px;
+}
+.testimonial-area .carousel-item .carousel-caption h5,
+.testimonial-area .carousel-item .carousel-caption p {
+    color: #fff;
+    text-align: left;
+}
+.testimonial-area .carousel-item .carousel-caption h5 {
+    font-size: 20px;
+    line-height: 28px;
+}
+.testimonial-area .carousel-item .carousel-caption p {
+    font-size: 12px;
+    margin-top: 20px;
+}
+.testimonial-area .carousel-indicators button {
+    background-color: #fff !important;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50% !important;
+}
+/* Testimonial end */
+
+
+/* Download start */
+.download-area {
+    padding: 30px 0;
+}
+.download-area .content {
+    text-align: center;
+}
+.download-area .content h4 {
+    color: #444;
+    font-size: 22px;
+}
+.download-area .content p {
+    color: #777;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.download-area .content button {
+    margin-top: 12px;
+    border: none;
+    background-color: #E84545;
+    font-size: 14px;
+    padding: 8px 20px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+.download-area .content button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 6px rgba(255, 98, 98, 0.548);
+}
+/* Download end */
+
+
+/* Footer start */
+footer {
+    padding-top: 30px;
+}
+footer .widgets {
+    background-color: #3A3E64;
+    padding: 30px 0;
+}
+footer .widgets .widget .title {
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+footer .widgets .widget .content {
+    margin-top: 12px;
+}
+footer .widgets .widget .content p {
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #fff;
+}
+footer .widgets .widget .content p:last-child {
+    margin-bottom: 0;
+}
+footer .widgets .widget .content .social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    column-gap: 8px;
+}
+footer .widgets .widget .content .social li a {
+    border: 1px solid #ddd;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .copyright {
+    background-color: #313454;
+    padding: 12px 0;
+}
+footer .copyright .content {
+    text-align: center;
+}
+footer .copyright .content p {
+    color: #777;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+footer .copyright .content p:last-child {
+    margin-bottom: 0;
+}
+footer .copyright .content p a {
+    color: #fff;
+    font-size: 16px;
+}
+/* Footer end */
